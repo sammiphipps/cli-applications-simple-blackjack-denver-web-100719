@@ -29,6 +29,7 @@ def initial_round
 end
 
 def hit?(current_card_total)
+
   prompt_user
   hit_or_stay = get_user_input
   if hit_or_stay == "h"
@@ -40,6 +41,7 @@ def hit?(current_card_total)
     prompt_user
   end
   current_card_total
+  
 end
 
 def invalid_command
