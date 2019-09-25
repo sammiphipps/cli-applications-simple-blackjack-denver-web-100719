@@ -29,19 +29,21 @@ def initial_round
 end
 
 def hit?(current_card_total)
-  =begin
+  #prompt_user
+  #hit_or_stay = get_user_input
+  #if hit_or_stay == "h"
+  #  card3 = deal_card
+  #  current_card_total += card3 
+  #end 
+  #if hit_or_stay != "h" && hit_or_stay != "s"
+  #  invalid_command
+  #  prompt_user
+  #end
+  #current_card_total
   prompt_user
   hit_or_stay = get_user_input
-  if hit_or_stay == "h"
-    card3 = deal_card
-    current_card_total += card3 
-  end 
-  if hit_or_stay != "h" && hit_or_stay != "s"
-    invalid_command
-    prompt_user
-  end
-  current_card_total
-  =end 
+  until hit_or_stay == "h" || hit_or_stay == "s"
+  
 end
 
 def invalid_command
