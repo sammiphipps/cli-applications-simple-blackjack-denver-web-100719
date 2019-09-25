@@ -31,12 +31,12 @@ end
 def hit?(current_card_total)
   prompt_user
   hit_or_stay = get_user_input
-  until hit_or_stay == "h" || hit_or_stay == "s"
-    if hit_or_stay != "h" || hit_or_stay != "s"
+  if hit_or_stay != "h" || hit_or_stay != "s"
+    until hit_or_stay == "h" || hit_or_stay == "s"
       invalid_command
       prompt_user
       hit_or_stay = get_user_input
-    end
+    end 
   end 
   if hit_or_stay == "h"
     card3 = deal_card
