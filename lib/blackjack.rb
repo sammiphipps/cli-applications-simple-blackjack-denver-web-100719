@@ -54,8 +54,11 @@ end
 #####################################################
 
 def runner
-  #welcome
-  #initial_round
-  #prompt_user
+  welcome
+  current_card_total = initial_round
+  if current_card_total < 21
+  else
+    
+  end 
 end
     
