@@ -43,7 +43,8 @@ def hit?(current_card_total)
   prompt_user
   hit_or_stay = get_user_input
   until hit_or_stay == "h" || hit_or_stay == "s"
-  
+    if hit_or_stay 
+  end 
 end
 
 def invalid_command
